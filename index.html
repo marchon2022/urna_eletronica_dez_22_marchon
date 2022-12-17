@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ballot_box">
+        <div class="screen">
+            <div class="top_part">
+                <div class="top_part_left">
+                    <div class="top_part_left-1">
+                        <span>SEU VOTO PARA</span> 
+                    </div>
+                    <div class="top_part_left-2">
+                       <span>PRESIDENTE</span> 
+                    </div>
+                    <div class="top_part_left-3">
+                        <div class="sq pisca"></div>
+                        <div class="sq"></div>
+                     </div>
+                     <div class="top_part_left-4">
+                        Nome: FULANO DE TAL<br/>
+                        Partido: Global<br/>
+                        Vice-Presidente: BELTRANO DE ALMEIDA
+                     </div>
+                </div>
+                <div class="top_part_right">
+                    <div class="top_part_right-img">
+                        <img src="" alt="">
+                        Presidente
+                    </div>
+                    <div class="top_part_right-img small">
+                        <img src="" alt="">
+                        Vice-Presidente
+                    </div>
+                </div> 
+            </div>
+            <div class="bottom_part">
+                Aperte a tecla: <br/>
+                CONFIRMA para CONFIRMAR este voto <br/>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="right_side">
+            <div class="title">
+                <img src="images/logo_just_elet.png" alt="">
+                <h3>justiça <br> eleitoral</h3>
+            </div>
+            <div class="keyboard">
+                <div class="number_block">
+                    <div class="number_button" onclick="clicou('1')">1</div>
+                    <div class="number_button" onclick="clicou('2')">2</div>
+                    <div class="number_button" onclick="clicou('3')">3</div>
+                </div>
+                <div class="number_block">
+                    <div class="number_button" onclick="clicou('4')">4</div>
+                    <div class="number_button" onclick="clicou('5')">5</div>
+                    <div class="number_button" onclick="clicou('6')">6</div>
+                </div>
+                <div class="number_block">
+                    <div class="number_button" onclick="clicou('7')">7</div>
+                    <div class="number_button" onclick="clicou('8')">8</div>
+                    <div class="number_button" onclick="clicou('9')">9</div>
+                </div>
+                <div class="number_block">
+                    <div class="number_button" onclick="clicou('0')">0</div>
+                </div>
+                <div class="decision_block">
+                    <div class="button_B" onclick="branco()">BRANCO</div>
+                    <div class="button_C" onclick="corrige()">CORRIGE</div>
+                    <div class="button_confirmation" onclick="confirma()">CONFIRMA</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

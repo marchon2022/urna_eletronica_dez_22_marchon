@@ -1,0 +1,235 @@
+@keyframes pisca {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ballot_box {
+    background-color: #dbd5c9;
+    display: flex;
+    width: 900px;
+    height: 440px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    border: 3.5px solid #bbb;
+}
+
+.screen {
+    width: 480px;
+    height: 300px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 3.5px solid #aaa;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7eede;
+    width: 290px;
+    height: 62px;
+    border-radius: 2px;
+    margin-bottom: 3px;
+}
+
+.title img {
+    height: 50px;
+}
+
+.title h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+}
+
+.keyboard {
+    background-color: #403a3a;
+    color: #fff;
+    width: 290px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px 0;
+}
+
+.number_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number_button {
+    width: 52px;
+    height: 31px;
+    box-shadow: 3px 3px 3px #000;
+    background-color: #2b2727;
+    margin-right: 15px;
+    border-radius: 2px;
+    padding: 3px 0 0 3px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.decision_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.button_B {
+    width: 73px;
+    height: 36px;
+    background-color: #f7eede;
+    color: #000;
+    margin-right: 15px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px #cfcdca;
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.button_C {
+    width: 73px;
+    height: 36px;
+    background-color: rgb(243, 47, 47);
+    color: #000;
+    margin-right: 15px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgb(226, 1, 1);
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.button_confirmation {
+    width: 73px;
+    height: 47px;
+    background-color: rgb(4, 150, 4);
+    color: #000;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgb(1, 100, 1);
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+/* CSS TELA: */
+
+.top_part {
+    flex: 1;
+    display: flex;
+}
+
+.top_part_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+
+.top_part_left-1 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #2b2727;
+}
+
+.top_part_left-2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.top_part_left-3 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+}
+
+.top_part_left-3 span {
+    margin-right: 25px;
+    font-size: 15px;
+}
+
+.sq {
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    margin-right: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+.top_part_left-4 {
+    flex: 1;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.top_part_right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px 5px 0 0; 
+}
+
+.top_part_right-img {
+    text-align: center;
+    font-size: 14px;
+}
+
+.top_part_right-img img {
+    width: 100%;
+}
+
+.top_part_right-img.small {
+    width: 80%;
+    font-size: 10px;
+}
+
+.bottom_part {
+    height: 50px;
+    font-size: 13px;
+    border-top: 2px solid #000;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+}
