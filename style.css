@@ -177,12 +177,7 @@ body {
     line-height: 40px;
 }
 
-.top_part_left-3 span {
-    margin-right: 25px;
-    font-size: 15px;
-}
-
-.sq {
+.numero {
     width: 30px;
     height: 40px;
     border: 1px solid #000;
@@ -231,5 +226,21 @@ body {
     border-top: 2px solid #000;
     padding-left: 8px;
     display: flex;
+    align-items: center;
+}
+
+.aviso_grande {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aviso_gigante {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }

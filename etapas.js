@@ -4,7 +4,7 @@ let etapas = [
         numeros: 5,
         candidatos: [
             {
-                numero: 12345,
+                numero: '12345',
                 nome: 'Menino Maluquinho',
                 partido: 'Panela',
                 fotos: [
@@ -12,7 +12,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 12345,
+                numero: '67890',
                 nome: 'Moana do Mar',
                 partido: 'Oceano',
                 fotos: [
@@ -26,7 +26,7 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: 11,
+                numero: '11',
                 nome: 'Shrek Ogro',
                 partido: 'Floresta',
                 fotos: [
@@ -35,7 +35,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 22,
+                numero: '22',
                 nome: 'Aladdin da Lampada',
                 partido: 'Tapete',
                 fotos: [
